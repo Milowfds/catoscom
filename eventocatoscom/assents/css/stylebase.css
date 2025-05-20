@@ -1,0 +1,175 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+  background-color: #fdfdfd;
+}
+
+h1, h3, p {
+  font-family: 'Anton', sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5211ba;
+  padding: 1rem 2rem;
+  color: white;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+header a img {
+  width: 300px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  padding: 1rem;
+}
+
+nav a {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #57bbff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.loginbutton {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.loginbutton a {
+  background-color: #a37be9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginbutton a:hover {
+  background-color: #57bbff;
+  transform: scale(1.05);
+}
+
+.loginbutton img {
+  width: 90px;
+  height: 90px;
+}
+
+/* LINHA DECORATIVA */
+.linhafds {
+  height: 5px;
+  background: linear-gradient(to right, #57bbff, #a37be9);
+}
+/* FOOTER */
+footer {
+  background-color: #e24795;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  display: flex;
+  gap: 10px;
+}
+
+.quemsomos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.linha img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.linha p {
+  flex: 1;
+  text-align: left;
+}
+
+footer .direitos {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  .textoinicio {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .loginbutton {
+    flex-direction: column;
+  }
+
+  .linha {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .linha p {
+    text-align: center;
+  }
+
+  .carousel img {
+    height: 250px;
+  }
+}

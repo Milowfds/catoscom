@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Comprar Ingresso - Catoscom</title>
+      <link rel="stylesheet" href="../css/stylebase.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+      <style>
+        main {
+          max-width: 600px;
+          margin: 2rem auto;
+          padding: 1rem;
+          background: linear-gradient(135deg, #a563ce, #e24795);
+          border-radius: 12px;
+          color: white;
+          font-family: 'Anton', sans-serif;
+        }
+        h1 {
+          text-align: center;
+          margin-bottom: 1.5rem;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+        label {
+          font-weight: bold;
+          font-size: 1.1rem;
+          margin-bottom: 0.3rem;
+        }
+        input, select, textarea {
+          padding: 10px;
+          border-radius: 8px;
+          border: none;
+          font-size: 1rem;
+          font-family: 'Anton', sans-serif;
+          outline: none;
+        }
+        input[type="submit"] {
+          background-color: #5211ba;
+          color: #ffbbea;
+          font-weight: bold;
+          cursor: pointer;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        input[type="submit"]:hover {
+          background-color: #57bbff;
+          transform: scale(1.05);
+        }
+        .small-note {
+          font-size: 0.8rem;
+          color: #ffd6f0;
+          font-family: Arial, sans-serif;
+        }
+        @media (max-width: 640px) {
+          main {
+            margin: 1rem;
+            padding: 1rem;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <header>
+        <a href="./index.html">
+          <img src="../midia/Catoscom..png" alt="Logo Catoscom" />
+        </a>
+        <nav>
+          <a href="../paginas/ingresso.html">Ingresso</a>
+          <a href="../paginas/atracao.html">Atrações</a>
+          <a href="../paginas/local.html">Local</a>
+        </nav>
+        <div class="loginbutton">
+          <img src="../midia/icongato.png" alt="Icone Gato" />
+          <a href="../paginas/login.html">Login</a>
+        </div>
+      </header>
+
+      <div class="linhafds"></div>
+
+      <main>
+        <h1>Comprar Ingresso - Catoscom 2025</h1>
+        <form action="#" method="POST" id="purchaseForm">
+          <label for="nome">Nome Completo *</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required />
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="exemplo@email.com" required />
+
+          <label for="telefone">Telefone *</label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\) \d{5}-\d{4}" required />
+          <small class="small-note">Formato: (99) 99999-9999</small>
+
+          <label for="dataNascimento">Data de Nascimento *</label>
+          <input type="date" id="dataNascimento" name="dataNascimento" required />
+
+          <label for="tipoIngresso">Tipo de Ingresso *</label>
+          <select id="tipoIngresso" name="tipoIngresso" required>
+            <option value="" disabled selected>Selecione...</option>
+            <option value="1dia">Ingresso 1 dia - R$50,00</option>
+            <option value="3dias">Ingresso 3 dias - R$120,00</option>
+            <option value="vip">Ingresso VIP - R$200,00</option>
+          </select>
+
+          <label for="quantidade">Quantidade *</label>
+          <input type="number" id="quantidade" name="quantidade" min="1" max="10" value="1" required />
+
+          <label for="pagamento">Forma de Pagamento *</label>
+          <select id="pagamento" name="pagamento" required>
+            <option value="" disabled selected>Selecione...</option>
+            <option value="cartao">Cartão de Crédito</option>
+            <option value="boleto">Boleto Bancário</option>
+            <option value="pix">PIX</option>
+          </select>
+
+          <label for="observacoes">Observações</label>
+          <textarea id="observacoes" name="observacoes" rows="4" placeholder="Algo a acrescentar?"></textarea>
+
+          <input type="submit" value="Finalizar Compra" />
+        </form>
+      </main>
+
+      <div class="linhafds"></div>
+
+      <footer>
+        <h3>Quem somos?</h3>
+        <div class="quemsomos">
+          <div class="linha">
+            <img src="../midia/fotodamorgana.jpeg" alt="Imagem equipe 1" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit atque accusantium ea minus excepturi dolor eligendi ratione mollitia itaque!
+            </p>
+          </div>
+          <div class="linha">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit atque accusantium ea minus excepturi dolor eligendi ratione mollitia itaque!
+            </p>
+            <img src="../midia/fotododev.jpeg" alt="Imagem equipe 2" />
+          </div>
+        </div>
+        <div class="direitos">&copy; 2025 Catoscom H4. Todos os direitos reservados.</div>
+      </footer>
+    </body>
+</html>

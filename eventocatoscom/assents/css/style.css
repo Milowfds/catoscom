@@ -1,0 +1,260 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Anton', sans-serif;
+  background-color: #fdfdfd;
+}
+
+h1, h3, p {
+  font-family: 'Anton', sans-serif;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5211ba;
+  padding: 1rem 2rem;
+  color: white;
+  margin-bottom: -100px;
+  margin-top: -100px;
+  
+}
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+header a img {
+  width: 300px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+  padding: 1rem;
+}
+
+nav a {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #57bbff;
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.loginbutton {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.loginbutton a {
+  background-color: #a37be9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.loginbutton a:hover {
+  background-color: #57bbff;
+  transform: scale(1.05);
+}
+
+.loginbutton img {
+  width: 90px;
+  height: 90px;
+}
+
+/* LINHA DECORATIVA */
+.linhafds {
+  height: 5px;
+  background: linear-gradient(to right, #57bbff, #a37be9);
+}
+
+/* INICIO */
+.inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(0, 72, 121, 0.8), rgba(0, 72, 121, 0.8)), url('../midia/bannerinicio.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 5rem;
+  flex-wrap: wrap;
+}
+
+.inicio img {
+  width: 500px;
+  height: 500px;
+}
+
+.textoinicio {
+  font-size: xx-large;
+}
+
+.textoinicio a {
+  color: #ffbbea;
+  text-decoration: none;
+}
+
+.comprar {
+  background-color: #5211ba;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.comprar a {
+  color: #e24795;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.comprar:hover {
+  background-color: #57bbff;
+  transform: scale(1.05);
+}
+
+/* MEIO */
+.meio {
+  text-align: center;
+  background: linear-gradient(rgba(3,59,102,1), rgb(165, 99, 206));
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.meio p {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+/* CONVIDADOS */
+.convidados {
+  background: linear-gradient(rgb(165, 99, 206), rgb(226, 71, 149));
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.carousel {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.carousel img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+footer {
+  background-color: #e24795;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+footer p {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer img {
+  display: flex;
+  gap: 10px;
+}
+
+.quemsomos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.linha {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.linha img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.linha p {
+  flex: 1;
+  text-align: left;
+}
+
+footer .direitos {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 768px) {
+  .textoinicio {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .loginbutton {
+    flex-direction: column;
+  }
+
+  .linha {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .linha p {
+    text-align: center;
+  }
+
+  .carousel img {
+    height: 250px;
+  }
+}

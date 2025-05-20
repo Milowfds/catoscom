@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Login - Catoscom</title>
+      <link rel="stylesheet" href="../css/stylebase.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+      <style>
+        main {
+          max-width: 400px;
+          margin: 3rem auto;
+          padding: 2rem;
+          background: linear-gradient(135deg, #a563ce, #e24795);
+          border-radius: 12px;
+          color: white;
+          font-family: 'Anton', sans-serif;
+          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+          text-align: center;
+          margin-bottom: 2rem;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          gap: 1.2rem;
+        }
+        label {
+          font-weight: bold;
+          font-size: 1.1rem;
+          margin-bottom: 0.3rem;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+          padding: 12px;
+          border-radius: 8px;
+          border: none;
+          font-size: 1rem;
+          font-family: 'Anton', sans-serif;
+          outline: none;
+        }
+        input[type="submit"] {
+          background-color: #5211ba;
+          color: #ffbbea;
+          font-weight: bold;
+          font-size: 1.1rem;
+          cursor: pointer;
+          border: none;
+          border-radius: 10px;
+          padding: 12px;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        input[type="submit"]:hover {
+          background-color: #57bbff;
+          transform: scale(1.05);
+        }
+        .links {
+          text-align: center;
+          margin-top: 1rem;
+          font-family: Arial, sans-serif;
+          font-size: 0.9rem;
+        }
+        .links a {
+          color: #ffbbea;
+          text-decoration: none;
+          margin: 0 8px;
+        }
+        .links a:hover {
+          text-decoration: underline;
+        }
+        @media (max-width: 480px) {
+          main {
+            margin: 2rem 1rem;
+            padding: 1.5rem;
+          }
+        }
+      </style>
+    </head>
+    <body>
+      <header>
+        <a href="./index.html">
+          <img src="../midia/Catoscom..png" alt="Logo Catoscom" />
+        </a>
+        <nav>
+          <a href="../paginas/ingresso.html">Ingresso</a>
+          <a href="../paginas/atracao.html">Atrações</a>
+          <a href="../paginas/local.html">Local</a>
+        </nav>
+        <div class="loginbutton">
+          <img src="../midia/icongato.png" alt="Icone Gato" />
+          <a href="../paginas/login.html">Login</a>
+        </div>
+      </header>
+  
+      <div class="linhafds"></div>
+  
+      <main>
+        <h1>Login</h1>
+        <form action="#" method="POST" id="loginForm">
+          <label for="user">Usuário ou Email *</label>
+          <input type="text" id="user" name="user" placeholder="Digite seu usuário ou email" required />
+        
+          <label for="senha">Senha *</label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
+        
+          <input type="submit" value="Entrar" />
+        </form>
+        <div class="links">
+          <a href="#">Esqueceu a senha?</a> | <a href="../paginas/criarconta.html">Criar conta</a>
+        </div>
+      </main>
+  
+      <div class="linhafds"></div>
+      <footer>
+        <h3>Quem somos?</h3>
+        <div class="quemsomos">
+          <div class="linha">
+            <img src="../midia/fotodamorgana.jpeg" alt="Imagem equipe 1" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit atque accusantium ea minus excepturi dolor eligendi ratione mollitia itaque!
+            </p>
+          </div>
+          <div class="linha">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit atque accusantium ea minus excepturi dolor eligendi ratione mollitia itaque!
+            </p>
+            <img src="../midia/fotododev.jpeg" alt="Imagem equipe 2" />
+          </div>
+        </div>
+        <div class="direitos">&copy; 2025 Catoscom H4. Todos os direitos reservados.</div>
+      </footer>
+    </body>
+</html>

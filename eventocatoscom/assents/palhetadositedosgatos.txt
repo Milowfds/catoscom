@@ -1,0 +1,19 @@
+#ffbbea — rosa claro (cor principal do corpo)
+
+#9f8fff — lilás
+
+rgb(82, 17, 186) — roxo escuro (contornos)
+
+#57bbff — azul claro (detalhes)
+
+rgb(226, 71, 149) — rosa mais vibrante (olhos ou detalhes)
+
+rgb(165, 99, 206) — lavanda escura
+
+#a37be9 — roxo médio
+
+#e7b0ef — rosa/lilás bem clarinho
+
+#ffbbeb — variação muito próxima do rosa principal
+
+#b097fb — lilás clarinho
